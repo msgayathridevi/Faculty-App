@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "213862546366",
+    "project_id": "facassist-a075c",
+    "storage_bucket": "facassist-a075c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213862546366:android:bd10609f52309d711257ef",
+        "android_client_info": {
+          "package_name": "com.example.faculty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213862546366-4ll3rvhhdoit80i0nh5j09euul8dplh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.faculty",
+            "certificate_hash": "0c9b827cc2a59a3fb8cb48585fd42fd176dbd6ee"
+          }
+        },
+        {
+          "client_id": "213862546366-3hjpqarv8n23p9cd3d2vo6ifuh8jsipa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-uAIClKepLYPQSeQ3jWRqE67d4hyrFAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213862546366-3hjpqarv8n23p9cd3d2vo6ifuh8jsipa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
