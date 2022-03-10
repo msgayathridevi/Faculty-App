@@ -112,7 +112,7 @@ public class MainActivity4 extends AppCompatActivity {
         radioid2 = rg2_pg1.getCheckedRadioButtonId();
         rad_btn2 = findViewById(radioid2);
         interactive = rad_btn2.getText().toString();
-        Toast.makeText(this, " selected emoji : " + rad_btn2.getText(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, " selected emoji : " + rad_btn2.getText(), Toast.LENGTH_SHORT).show();
     }
 
 }
