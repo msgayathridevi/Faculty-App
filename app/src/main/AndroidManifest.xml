@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.faculty" >
+    package="com.example.faculty">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:label" >
-        <activity android:name=".MainActivity7" >
-        </activity>
-        <activity android:name=".MainActivity5" />
-        <activity android:name=".MainActivity6" />
-        <activity android:name=".MainActivity4" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainActivity3" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity0" >
+        tools:replace="android:label">
+        <activity android:name=".fac_count"></activity>
+        <activity android:name=".stu_rp2" />
+        <activity android:name=".tq_stu" />
+        <activity android:name=".stu_rp1" />
+        <activity android:name=".fac_generate" />
+        <activity android:name=".wel_stu" />
+        <activity android:name=".select_user">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

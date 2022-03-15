@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MainActivity5 extends AppCompatActivity {
+public class stu_rp2 extends AppCompatActivity {
 
     Button prev_pg, submit;
 
@@ -45,7 +45,7 @@ public class MainActivity5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.stu_rp2);
 
         // getting star rate value
         star_rtng = findViewById(R.id.star_rtng);
@@ -53,7 +53,7 @@ public class MainActivity5 extends AppCompatActivity {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 star_value = v;
-                Toast.makeText(MainActivity5.this, "Your rating : " + star_value, Toast.LENGTH_SHORT).show();
+                Toast.makeText(stu_rp2.this, "Your rating : " + star_value, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -70,7 +70,7 @@ public class MainActivity5 extends AppCompatActivity {
         prev_pg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity5.this, MainActivity4.class);
+                Intent i = new Intent(stu_rp2.this, stu_rp1.class);
                 startActivity(i);
             }
         });
@@ -79,8 +79,8 @@ public class MainActivity5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 feed_text = feed.getText().toString();
-                Toast.makeText(MainActivity5.this, "Feedback : "+feed_text, Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(MainActivity5.this, MainActivity6.class);
+                Toast.makeText(stu_rp2.this, "Feedback : "+feed_text, Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(stu_rp2.this, tq_stu.class);
                 startActivity(i);
                 insert_data();
             }
@@ -96,7 +96,7 @@ public class MainActivity5 extends AppCompatActivity {
 
     private void insert_data(){
         // FireBase
-        rootnode = FirebaseDatabase.getInstance().getReference("student2").child(dates);
+        rootnode = FirebaseDatabase.getInstance().getReference("data").child(dates);
 
         // get previous data
         portion = getIntent().getStringExtra("portion");
@@ -106,7 +106,7 @@ public class MainActivity5 extends AppCompatActivity {
 
         //saving feedback data
         feed_text = feed.getText().toString();
-        Toast.makeText(MainActivity5.this, "Feedback : "+feed_text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(stu_rp2.this, "Feedback : "+feed_text, Toast.LENGTH_SHORT).show();
 
         rg_str = rad_btn.getText().toString();
         Toast.makeText(this, "rg_str : "+rg_str, Toast.LENGTH_SHORT).show();

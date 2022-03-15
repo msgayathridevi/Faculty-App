@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity0 extends AppCompatActivity {
+public class select_user extends AppCompatActivity {
 
     Button fac, stu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main0);
+        setContentView(R.layout.select_user);
 
         fac = findViewById(R.id.fac);
         stu = findViewById(R.id.stu);
@@ -22,7 +22,7 @@ public class MainActivity0 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity0.this,MainActivity.class);
+                Intent intent = new Intent(select_user.this, fac_generate.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +30,7 @@ public class MainActivity0 extends AppCompatActivity {
         stu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity0.this, MainActivity2.class);
+                Intent intent = new Intent(select_user.this, wel_stu.class);
                 startActivity(intent);
             }
         });

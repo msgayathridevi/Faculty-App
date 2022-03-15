@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity4">
+    tools:context=".stu_rp1">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Rate Page"
+        android:text="@string/rate_page"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Portion Coverage"
+        android:text="@string/portion_coverage"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
@@ -52,7 +52,7 @@
             android:button="@android:color/transparent"
             android:elevation="1dp"
             android:padding="10dp"
-            android:text="too less"
+            android:text="@string/too_less"
             android:textColor="@drawable/radio_text_color" />
 
         <RadioButton
@@ -65,7 +65,7 @@
             android:button="@android:color/transparent"
             android:elevation="1dp"
             android:padding="10dp"
-            android:text="less"
+            android:text="@string/less"
             android:textColor="@drawable/radio_text_color" />
 
         <RadioButton
@@ -78,7 +78,7 @@
             android:button="@android:color/transparent"
             android:elevation="1dp"
             android:padding="10dp"
-            android:text="adequate"
+            android:text="@string/adequate"
             android:textColor="@drawable/radio_text_color" />
 
         <RadioButton
@@ -91,7 +91,7 @@
             android:button="@android:color/transparent"
             android:elevation="1dp"
             android:padding="10dp"
-            android:text="heavy"
+            android:text="@string/heavy"
             android:textColor="@drawable/radio_text_color" />
 
         <RadioButton
@@ -104,7 +104,7 @@
             android:button="@android:color/transparent"
             android:elevation="1dp"
             android:padding="10dp"
-            android:text="v.heavy"
+            android:text="@string/v_heavy"
             android:textColor="@drawable/radio_text_color" />
     </RadioGroup>
 
@@ -114,9 +114,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Interactive Class?"
+        android:text="@string/interactive_class"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/rg"
+        app:layout_constraintBottom_toTopOf="@+id/rg2_pg1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
@@ -201,7 +201,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:text="Usage of Digital Tools"
+        android:text="@string/usage_of_digital_tools"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -217,8 +217,8 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:max="5"
-        android:paddingLeft="1dp"
-        android:paddingRight="16dp"
+        android:paddingStart="1dp"
+        android:paddingEnd="16dp"
         android:progress="3"
         app:layout_constraintBottom_toTopOf="@+id/prev_pg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -230,7 +230,7 @@
         android:layout_width="23dp"
         android:layout_height="39dp"
         android:layout_marginTop="56dp"
-        android:text="0"
+        android:text="@string/_0"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/seekbar"
         app:layout_constraintHorizontal_bias="0.636"
@@ -243,7 +243,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="5"
+        android:text="@string/_5"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.403"
@@ -257,7 +257,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="16dp"
-        android:text="Next Page"
+        android:text="@string/next_page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.979"
@@ -267,8 +267,8 @@
         android:id="@+id/code_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code : "
-        android:textSize="24dp"
+        android:text="@string/code"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

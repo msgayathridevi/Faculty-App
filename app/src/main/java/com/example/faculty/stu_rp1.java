@@ -12,7 +12,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity4 extends AppCompatActivity {
+public class stu_rp1 extends AppCompatActivity {
 
     TextView code_txt;
     int code;
@@ -34,7 +34,7 @@ public class MainActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.stu_rp1);
 
         // get code display
         code = getIntent().getIntExtra("code",0);
@@ -74,12 +74,12 @@ public class MainActivity4 extends AppCompatActivity {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(MainActivity4.this, "Drag and pick a value ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(stu_rp1.this, "Drag and pick a value ", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(MainActivity4.this, "Rated : " + digital_prog, Toast.LENGTH_SHORT).show();
+                Toast.makeText(stu_rp1.this, "Rated : " + digital_prog, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -87,9 +87,9 @@ public class MainActivity4 extends AppCompatActivity {
         next_pg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity4.this, MainActivity5.class);
+                Intent i = new Intent(stu_rp1.this, stu_rp2.class);
                 i.putExtra("portion", portion);
-                i.putExtra(MainActivity5.interactive, interactive);
+                i.putExtra(stu_rp2.interactive, interactive);
                 i.putExtra("digital_prog", digital_prog);
                 startActivity(i);
             }

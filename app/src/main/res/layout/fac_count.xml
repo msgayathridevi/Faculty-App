@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity7">
+    tools:context=".fac_count">
 
     <TextView
         android:id="@+id/code_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
-        android:text="Code :  "
+        android:text="@string/code"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="111dp"
         android:layout_marginEnd="88dp"
-        android:text="Realtime Rated Peers : "
+        android:text="@string/realtime_rated_peers"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
